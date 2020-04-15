@@ -1,8 +1,16 @@
+/*http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css*/
 /*////////////// Fonts //////////////*/
 
 /* link the web font used for the level 1 heading here */
+@font-face {
+  font-family: 'Baskerville';
+  src: url(./fonts/Baskerville.ttc);
+}
 
 /*////////// Global Styles //////////*/
+* {
+  text-align: center;
+}
 
 body {
 	background: #F3EBE9;
@@ -17,4 +25,46 @@ body {
 	padding: 0 45px 20px;
 }
 
-/* Write all remaining styles here */
+.wrapper img {
+  border: 5px solid rgb(152,173,166);
+}
+
+h1, h2 {
+  text-align: left;
+}
+
+h1 {
+  cursor: pointer;
+  color: rgb(152,173,166);
+  font-family: 'Baskerville', serif
+  font-size: 5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: rgb(111,127,122);
+  font-size: 2em;
+}
+
+p {
+  text-align: left;
+  color: #555;
+  font-size: 1em;
+  margin: 0 0 20px 0;
+}
+
+#press {
+  display: flex;
+  justify-content: space-around;
+}
+
+#press img {
+  text-align: left;
+  border: 4px solid #c5c5c5;
+}
+
+#press p {
+  text-align: right;
+  font-size: 85%;
+}
